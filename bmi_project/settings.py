@@ -31,13 +31,13 @@ ALLOWED_HOSTS = ['aswini.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'bmi_api',
 ]
 
@@ -128,5 +128,4 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',  # Allow any request, don't do this in production!
     ],
-    'DEFAULT_AUTHENTICATION_CLASSES': [],
 }
